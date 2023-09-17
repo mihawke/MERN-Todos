@@ -1,0 +1,142 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: 791px;
+  min-height: 481px;
+  background-color: #1E293B;
+  border: 3px solid #334155;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.header {
+  font-size: 32px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.item, .item-complete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  width: 724px;
+  max-height: 64px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+}
+
+.item {
+  background-color: #64748B;
+}
+
+.item-complete {
+  background-color: #0284C7;
+}
+
+.item:hover, .item-complete:hover {
+  border-color: #fff;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox, .checkbox-complete {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: #334155;
+  margin-right: 10px;
+}
+
+.checkbox-complete{
+  background-color: greenyellow;
+}
+
+.task {
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.new-todo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  justify-content: space-between;
+  width: 724px;
+  max-height: 64px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 2px solid gray;
+}
+
+.input{
+  background-color: transparent;
+  font-size: 16px;
+  outline: none;
+  width: 650px;
+  border: none;
+}
+
+.add-button{
+  width: 61px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.add-button:hover {
+  color: green;
+}
+
+.delete {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
